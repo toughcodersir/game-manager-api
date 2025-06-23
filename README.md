@@ -1,28 +1,34 @@
 # 🎮 Game Inventory Manager
 
-Game Inventory Manager API is a full stack app using Node.js, Express and MongoDB to perform CRUDE operations on a game inventory. It includes a responsive frontend, RESTful APIs and serves a great learning project for APIs and database integration This project allows users to manage a collection of video games with the ability to **add**, **view**, **update**, and **delete** entries through a clean frontend and custom backend APIs.
+Game Inventory Manager API is a full stack app using Node.js, Express and MongoDB to perform CRUDE operations on a game inventory. It includes a responsive frontend, RESTful APIs and serves a great learning project for APIs and database integration. This project allows users to manage a collection of video games with the ability to **add**, **view**, **update**, and **delete** entries through a clean frontend and custom backend APIs.
 
+---
 
 ## 📦 Tech Stack
 
-| Layer     | Tech                |
-|-----------|---------------------|
-| Backend   | Node.js, Express     |
-| Database  | MongoDB Atlas (Mongoose ORM) |
-| Frontend  | HTML, CSS, JavaScript |
-| API Tools | Postman (for testing) |
+| Layer     | Tech                             |
+|-----------|----------------------------------|
+| Backend   | Node.js, Express                 |
+| Database  | MongoDB Atlas (Mongoose ORM)     |
+| Frontend  | HTML, CSS, JavaScript            |
+| API Tools | Postman (for testing)            |
+| Testing   | Jest, Supertest, Mockingoose     |
 
+---
 
-
-## Features
+## 🚀 Features
 
 - Add new games (Name, Genre, Price)
--  View all games in a list
--  Update game details via prompts
--  Delete games instantly
--  Fully synced with MongoDB backend
--  Responsive and interactive UI
+- View all games in a list
+- Update game details via prompts
+- Delete games instantly
+- Fully synced with MongoDB backend
+- Responsive and interactive UI
+- **Automated API Testing using Jest & Supertest**
+- **Test coverage over 67.5%**
+- **Environment variable setup with dotenv**
 
+---
 
 ## 🌐 API Endpoints
 
@@ -33,6 +39,8 @@ Game Inventory Manager API is a full stack app using Node.js, Express and MongoD
 | PUT    | `/api/items/:id`     | Update a game        |
 | DELETE | `/api/items/:id`     | Delete a game        |
 
+---
+
 **Sample POST/PUT JSON:**
 
 ```json
@@ -41,6 +49,7 @@ Game Inventory Manager API is a full stack app using Node.js, Express and MongoD
   "genre": "Action",
   "price": 1499
 }
+
 
 To Run the Project Locally, follow the following.
 
@@ -84,28 +93,48 @@ keploy-api-server/
 │   └── Item.js
 ├── routes/              # API route definitions
 │   └── itemRoutes.js
-├── server.js            # Express entry point
-├── .env                 # Environment vars
-├── frontend/            # UI files
+├── frontend/            # Frontend files
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
+├── tests/               # API tests
+│   └── api/
+│       └── items.test.js
+├── .env                 # Environment variables
+├── server.js            # Express server entry point
 ├── package.json
 └── README.md
 
+
 🧪 API Testing 
 
-Tested the backend APIs using Postman or curl.
+Manual Testing: via Postman
+Automated Testing: via Jest + Supertest
+Tested the backend APIs using Postman 
 
 GET http://localhost:5000/api/items
 POST http://localhost:5000/api/items
 PUT http://localhost:5000/api/items/:id
 DELETE http://localhost:5000/api/items/:id
 
+🧪 Automated Test Coverage
+This project includes automated tests using Jest and Supertest, covering all core API endpoints (GET, POST, PUT, DELETE) and interactions with MongoDB.
+
+🧪 To Run the Tests
+$env:NODE_ENV="test"   # For PowerShell
+npm test
+
+📊 Test Coverage Report
+Metric	Coverage
+Statements	67.39%
+Branches	33.33%
+Functions	42.85%
+Lines	67.39%
+
+✅ Coverage can be improved by adding more tests for edge cases and input validations, which can exceed upto 90% as well.
 
 ✨ About This Project
-This project was created as part of Keploy API Fellowship - Session 2.
-
+ It majorly focuses on Real-world API development ,Testing best practices,Frontend + backend integration and High-quality documentation.
 
 
 📬 Contact
@@ -115,5 +144,4 @@ Feel free to connect:
 
 🌐 https://github.com/toughcodersir
 
-🚀 Keep Building, Keep Learning — with Keploy!
 
