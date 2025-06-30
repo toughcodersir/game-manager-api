@@ -129,7 +129,7 @@ Real-time experience using Chrome Extension
 Moving from 0 to 67%+ test coverage seamlessly
 
 Check out my blog: [dev.to link]
-
+CI/CD : https://github.com/toughcodersir/game-manager-api/actions
 
 
 📁 Project Structure
@@ -168,5 +168,6 @@ Hands-on with Keploy's AI test generation and Chrome Extension
 
 🌐 GitHub – https://github.com/toughcodersir
 
+🌐 CI/CD Workflow- https://github.com/toughcodersir/game-manager-api/actions
 
 © 2025 Game Inventory Manager | Built with ❤️ for the Keploy Fellowship 
