@@ -128,7 +128,7 @@ How AI transformed my test workflow
 Real-time experience using Chrome Extension
 Moving from 0 to 67%+ test coverage seamlessly
 
-Check out my blog: [dev.to link]
+Check out my blog: https://medium.com/@samriddhi.singh1222/how-i-achieved-67-api-test-coverage-using-keploy-in-minutes-c8033fb349da
 CI/CD : https://github.com/toughcodersir/game-manager-api/actions
 
 
